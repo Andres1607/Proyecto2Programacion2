@@ -146,6 +146,7 @@
     <ClCompile Include="Tornamesa.cpp" />
     <ClCompile Include="UnidadDiscoCompacto.cpp" />
     <ClCompile Include="Fecha.cpp" />
+    <ClCompile Include="Venta.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Amplificador.h" />
@@ -168,6 +169,7 @@
     <ClInclude Include="Sistema.h" />
     <ClInclude Include="Tornamesa.h" />
     <ClInclude Include="UnidadDiscoCompacto.h" />
+    <ClInclude Include="Venta.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
