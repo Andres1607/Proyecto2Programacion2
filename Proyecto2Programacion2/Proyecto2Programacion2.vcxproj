@@ -127,39 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Amplificador.cpp" />
-    <ClCompile Include="Audifonos.cpp" />
     <ClCompile Include="Cliente.cpp" />
-    <ClCompile Include="Componente.cpp" />
-    <ClCompile Include="DispositivoBluetooth.cpp" />
     <ClCompile Include="Empresa.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Mezclador.cpp" />
-    <ClCompile Include="Parlante.cpp" />
     <ClCompile Include="Persona.cpp" />
-    <ClCompile Include="Procesador.cpp" />
-    <ClCompile Include="Radio.cpp" />
-    <ClCompile Include="Reproductor.cpp" />
-    <ClCompile Include="SalidaDeAudio.cpp" />
-    <ClCompile Include="Tornamesa.cpp" />
-    <ClCompile Include="UnidadDiscoCompacto.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Amplificador.h" />
-    <ClInclude Include="Audifonos.h" />
     <ClInclude Include="Cliente.h" />
-    <ClInclude Include="Componente.h" />
-    <ClInclude Include="DispositivoBluetooth.h" />
     <ClInclude Include="Empresa.h" />
-    <ClInclude Include="Mezclador.h" />
-    <ClInclude Include="Parlante.h" />
     <ClInclude Include="Persona.h" />
-    <ClInclude Include="Procesador.h" />
-    <ClInclude Include="Radio.h" />
-    <ClInclude Include="Reproductor.h" />
-    <ClInclude Include="SalidaDeAudio.h" />
-    <ClInclude Include="Tornamesa.h" />
-    <ClInclude Include="UnidadDiscoCompacto.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

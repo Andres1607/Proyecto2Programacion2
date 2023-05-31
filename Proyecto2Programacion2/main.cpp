@@ -1,7 +1,6 @@
 #include <sstream>
 #include <iostream>
-//Componente
-#include "Componente.h"
+/*
 //Reproductor
 #include "Reproductor.h"
 #include "Tornamesa.h"
@@ -16,7 +15,7 @@
 #include "SalidaDeAudio.h"
 #include "Parlante.h"
 #include "Audifonos.h"
-
+*/
 using namespace std;
 
 int main() {
