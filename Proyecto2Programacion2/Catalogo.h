@@ -5,8 +5,15 @@
 class Catalogo
 {
 private:
-	ContList<Sistema>* SisPreConfigurados;
+	ContList<Componente>* SisPreConfigurados;
 public:
+	Catalogo();
+	virtual~Catalogo();
+	//To string
+	string imprimir();
+	//Templates
+	void agregarSistemaPreconfigurado(Componente*);
+	void eliminarComponenteEspecificoDelSistemaPre(Componente*);
 
 };
 

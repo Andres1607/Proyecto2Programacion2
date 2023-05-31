@@ -1,4 +1,4 @@
-﻿#include <sstream>
+#include <sstream>
 #include <iostream>
 
 //Reproductor
@@ -30,7 +30,7 @@ int main() {
 	cout << c2->toString() << endl;
 	*/
 
-	
+
 	//Prueba de composite, pero sin sistemas, solo los individuales
 
 	Componente* tornamesa = new Tornamesa("Tornamesa", 100, "J604jua8", "Algo loco");
@@ -42,18 +42,18 @@ int main() {
 	Componente* parlante = new Amplificador("Parlante", 700, "lgtp5544", "Algo loco");
 	Componente* audifonos = new Audifonos("Audifonos", 800, "laj1ucm2", "Algo loco");
 
-	cout<<"--------------------------"<<endl;
+	cout << "--------------------------" << endl;
 
-	cout<< tornamesa->imprimir() << endl;
-	cout<< radio->imprimir() << endl;
-	cout<< unidaddDC->imprimir() << endl;
-	cout<< dispBlue->imprimir() << endl;
-	cout<< mezclador->imprimir() << endl;
-	cout<< amplificador->imprimir() << endl;
-	cout<< parlante->imprimir() << endl;
-	cout<< audifonos->imprimir() << endl;
-	
-	cout<<"--------------------------"<<endl;
+	cout << tornamesa->imprimir() << endl;
+	cout << radio->imprimir() << endl;
+	cout << unidaddDC->imprimir() << endl;
+	cout << dispBlue->imprimir() << endl;
+	cout << mezclador->imprimir() << endl;
+	cout << amplificador->imprimir() << endl;
+	cout << parlante->imprimir() << endl;
+	cout << audifonos->imprimir() << endl;
+
+	cout << "--------------------------" << endl;
 
 	Componente* sistema = new Sistema();
 	sistema->agregarComponente(tornamesa);
@@ -64,7 +64,7 @@ int main() {
 
 	//sistema->eliminarComponenteEspecifico(tornamesa);
 	//cout << sistema->imprimir() << endl;
-	
+
 
 	/*
 		Template:

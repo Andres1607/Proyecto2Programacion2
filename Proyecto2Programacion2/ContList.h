@@ -14,6 +14,7 @@ public:
 	string imprimirObjs();
 	void eliminarTodosObjs();
 	int obtenerCantObjs();
+	double obtenerPrecio();
 	bool eliminarObjEspecif(T*);
 	ContList& operator = (const ContList<T>&);
 };
@@ -62,8 +63,11 @@ string ContList<T>::imprimirObjs() {
 		s << pAux->obtenerObj()->imprimir() << endl;
 		pAux = pAux->obtenerSig();
 	}
+	s << "Precio total del sistema: " << this->obtenerPrecio() << endl;
 	return s.str();
 }
+
+
 
 template<class T>
 void ContList<T>::eliminarTodosObjs() {
@@ -79,6 +83,19 @@ void ContList<T>::eliminarTodosObjs() {
 
 template<class T>
 int ContList<T>::obtenerCantObjs() { return cantObjs; }
+
+template<class T>
+inline double ContList<T>::obtenerPrecio()
+{
+	Nodo<T>* pA = pPio;
+	double r = 0.0;
+
+	while (pA != NULL) {
+		r += pA->obtenerObj()->obtenerPrecio();
+		pA = pA->obtenerSig();
+	}
+	return r;
+}
 
 template<class T>
 bool ContList<T>::eliminarObjEspecif(T* obj) {

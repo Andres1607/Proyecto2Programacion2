@@ -1,15 +1,25 @@
 #pragma once
 #include "Componente.h"
 #include "ContList.h"
+#include "Reproductor.h"
+#include "Procesador.h"
+#include "SalidaDeAudio.h"
 class Sistema: public Componente
 {
 private:
 	string cod;
 	ContList<Componente>* sistema;
-	Componente* componente;
+	Reproductor* proce;
+	Procesador* rep;
+	SalidaDeAudio* sAudio;
+	//Componente* componente;
 public:
 	Sistema(string = "", string = "");
 	virtual~Sistema();
+	//Abstract Factory
+	Reproductor* crearReproductor();
+	Procesador* crearProcesador();
+	SalidaDeAudio* crearSalidaDeAudio();
 	//M.V.P
 	//To string
 	string imprimir();

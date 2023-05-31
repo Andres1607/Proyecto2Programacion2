@@ -10,11 +10,33 @@ Sistema::~Sistema()
 {
 }
 
+Reproductor* Sistema::crearReproductor()
+{
+    //return Interfaz::CrearReproductor();
+    return NULL;//Por el momento
+}
+
+Procesador* Sistema::crearProcesador()
+{
+    //return Interfaz::CrearProsesador();
+    return NULL;//Por el momento
+}
+
+SalidaDeAudio* Sistema::crearSalidaDeAudio()
+{
+    //return Interfaz::CrearSalidaDeAudio();
+    return NULL;//Por el momento
+}
+
 string Sistema::imprimir()
 {
     stringstream s;
+    s << "Nombre del sistema: " << nombre << endl
+        << "Codigo: " << cod << endl
+        << "------------------LISTADO COMPONENTES------------------" << endl;
     if (sistema != NULL)
-        s << sistema->imprimirObjs() << endl;
+        s << sistema->imprimirObjs();
+    s << "-------------------------------------------------------" << endl;
     return s.str();
 }
 
