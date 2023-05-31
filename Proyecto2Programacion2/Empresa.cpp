@@ -12,7 +12,7 @@ string Empresa::obtenerCedJuridica() { return cedJuridica; }
 
 string Empresa::obtenerNomEmpresa() { return nomEmpresa; }
 
-string Empresa::toString()
+string Empresa::imprimir()
 {
 	stringstream s;
 	s << "-------------CLIENTE-------------------" << endl;

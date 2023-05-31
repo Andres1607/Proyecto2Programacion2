@@ -16,7 +16,7 @@ string Persona::obtenerNacionalidad() { return nacionalidad; }
 
 string Persona::obtenerNombre() { return nombre; }
 
-string Persona::toString()
+string Persona::imprimir()
 {
 	stringstream s;
 	s << "-------------CLIENTE-------------------" << endl;

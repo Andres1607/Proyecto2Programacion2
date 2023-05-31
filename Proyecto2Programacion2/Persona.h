@@ -16,6 +16,6 @@ public:
 	string obtenerCorreoE();
 	string obtenerNacionalidad();
 	string obtenerNombre();
-	string toString();
+	string imprimir();
 };
 

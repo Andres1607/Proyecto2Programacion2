@@ -49,6 +49,27 @@ int main() {
 	cout<< amplificador->imprimir() << endl;
 	cout<< parlante->imprimir() << endl;
 	cout<< audifonos->imprimir() << endl;
+
+		Template:
+	ContList<Cliente>* cl = new ContList<Cliente>();
+	cl->agregarObj(c1);
+	cl->agregarObj(c2);
+	cout<< cl->imprimirObjs() << endl;
+	cl->obtenerCantObjs();
+
+	ContList<Cliente>* cl2 = new ContList<Cliente>(*cl);
+	cout << cl2->imprimirObjs() << endl;
+
+	ContList<Cliente>* cl3 = new ContList<Cliente>();
+	cl3->agregarObj(c1);
+	cl3->agregarObj(c1);
+	cout << cl3->imprimirObjs() << endl;
+	cl3 = cl;
+	cout << cl3->imprimirObjs() << endl;
+
+
+
+
 	*/
 	system("pause");
 	return 0;

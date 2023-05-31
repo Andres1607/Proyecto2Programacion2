@@ -12,5 +12,5 @@ public:
 	string obtenerCiudadU();
 	string obtenerCedJuridica();
 	string obtenerNomEmpresa();
-	string toString();
+	string imprimir();
 };

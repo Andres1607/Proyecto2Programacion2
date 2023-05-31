@@ -150,9 +150,11 @@
     <ClInclude Include="Audifonos.h" />
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="Componente.h" />
+    <ClInclude Include="ContList.h" />
     <ClInclude Include="DispBluetooth.h" />
     <ClInclude Include="Empresa.h" />
     <ClInclude Include="Mezclador.h" />
+    <ClInclude Include="Nodo.h" />
     <ClInclude Include="Parlante.h" />
     <ClInclude Include="Persona.h" />
     <ClInclude Include="Procesador.h" />
