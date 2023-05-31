@@ -1,7 +1,8 @@
 #include "Sistema.h"
 
-Sistema::Sistema(): Componente()
+Sistema::Sistema(string nom, string cod) : Componente(nom)
 {
+    this->cod = cod;
     sistema = new ContList<Componente>();
 }
 
@@ -37,7 +38,12 @@ string Sistema::obtenerCaracteristica()
     return "";
 }
 
-void Sistema::modificarNombre(string )
+string Sistema::obtenerCodigoDelSietma()
+{
+    return cod;
+}
+
+void Sistema::modificarNombre(string)
 {
 }
 
@@ -51,6 +57,11 @@ void Sistema::modificarModelo(string)
 
 void Sistema::modificarCaracteristica(string)
 {
+}
+
+void Sistema::modificarCodigoDelSistema(string cod)
+{
+    this->cod = cod;
 }
 
 void Sistema::agregarComponente(Componente* comp)

@@ -35,6 +35,11 @@ string Parlante::obtenerCaracteristica()
 	return caracteristica;
 }
 
+string Parlante::obtenerCodigoDelSietma()
+{
+	return "";
+}
+
 void Parlante::modificarNombre(string nom)
 {
 	this->nombre = nom;
@@ -53,6 +58,10 @@ void Parlante::modificarModelo(string mod)
 void Parlante::modificarCaracteristica(string car)
 {
 	this->caracteristica = car;
+}
+
+void Parlante::modificarCodigoDelSistema(string)
+{
 }
 
 void Parlante::agregarComponente(Componente*)

@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Amplificador.cpp" />
     <ClCompile Include="Audifonos.cpp" />
+    <ClCompile Include="Catalogo.cpp" />
     <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="Componente.cpp" />
     <ClCompile Include="DispBluetooth.cpp" />
@@ -144,11 +145,12 @@
     <ClCompile Include="Sistema.cpp" />
     <ClCompile Include="Tornamesa.cpp" />
     <ClCompile Include="UnidadDiscoCompacto.cpp" />
-    <ClCompile Include="Venta.cpp" />
+    <ClCompile Include="Fecha.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Amplificador.h" />
     <ClInclude Include="Audifonos.h" />
+    <ClInclude Include="Catalogo.h" />
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="Componente.h" />
     <ClInclude Include="ContList.h" />

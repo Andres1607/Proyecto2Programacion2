@@ -35,6 +35,11 @@ string Amplificador::obtenerCaracteristica()
 	return caracteristica;
 }
 
+string Amplificador::obtenerCodigoDelSietma()
+{
+	return "";
+}
+
 void Amplificador::modificarNombre(string nom)
 {
 	this->nombre = nom;
@@ -53,6 +58,10 @@ void Amplificador::modificarModelo(string mod)
 void Amplificador::modificarCaracteristica(string car)
 {
 	this->caracteristica = car;
+}
+
+void Amplificador::modificarCodigoDelSistema(string)
+{
 }
 
 void Amplificador::agregarComponente(Componente*)

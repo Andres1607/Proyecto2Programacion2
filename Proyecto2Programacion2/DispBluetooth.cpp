@@ -35,6 +35,11 @@ string DispBluetooth::obtenerCaracteristica()
 	return caracteristica;
 }
 
+string DispBluetooth::obtenerCodigoDelSietma()
+{
+	return "";
+}
+
 void DispBluetooth::modificarNombre(string nom)
 {
 	this->nombre = nom;
@@ -53,6 +58,10 @@ void DispBluetooth::modificarModelo(string mod)
 void DispBluetooth::modificarCaracteristica(string car)
 {
 	this->caracteristica = car;
+}
+
+void DispBluetooth::modificarCodigoDelSistema(string)
+{
 }
 
 void DispBluetooth::agregarComponente(Componente*)

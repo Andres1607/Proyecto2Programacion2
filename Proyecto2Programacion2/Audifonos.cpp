@@ -35,6 +35,11 @@ string Audifonos::obtenerCaracteristica()
 	return caracteristica;
 }
 
+string Audifonos::obtenerCodigoDelSietma()
+{
+	return "";
+}
+
 void Audifonos::modificarNombre(string nom)
 {
 	this->nombre = nom;
@@ -53,6 +58,10 @@ void Audifonos::modificarModelo(string mod)
 void Audifonos::modificarCaracteristica(string car)
 {
 	this->caracteristica = car;
+}
+
+void Audifonos::modificarCodigoDelSistema(string)
+{
 }
 
 void Audifonos::agregarComponente(Componente*)

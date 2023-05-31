@@ -16,6 +16,7 @@
 #include "Parlante.h"
 #include "Audifonos.h"
 //Sistema Composite template
+#include  "Sistema.h"
 
 using namespace std;
 
@@ -41,7 +42,8 @@ int main() {
 	Componente* parlante = new Amplificador("Parlante", 700, "lgtp5544", "Algo loco");
 	Componente* audifonos = new Audifonos("Audifonos", 800, "laj1ucm2", "Algo loco");
 
-	/*
+	cout<<"--------------------------"<<endl;
+
 	cout<< tornamesa->imprimir() << endl;
 	cout<< radio->imprimir() << endl;
 	cout<< unidaddDC->imprimir() << endl;
@@ -50,10 +52,19 @@ int main() {
 	cout<< amplificador->imprimir() << endl;
 	cout<< parlante->imprimir() << endl;
 	cout<< audifonos->imprimir() << endl;
-	*/
+	
+	cout<<"--------------------------"<<endl;
 
+	Componente* sistema = new Sistema();
+	sistema->agregarComponente(tornamesa);
+	sistema->agregarComponente(radio);
+	sistema->agregarComponente(unidaddDC);
+	cout << sistema->imprimir() << endl;
+	cout << "--------------------------------" << endl;
 
-
+	//sistema->eliminarComponenteEspecifico(tornamesa);
+	//cout << sistema->imprimir() << endl;
+	
 
 	/*
 		Template:

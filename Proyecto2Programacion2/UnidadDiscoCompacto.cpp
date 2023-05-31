@@ -35,6 +35,11 @@ string UnidadDiscoCompacto::obtenerCaracteristica()
 	return caracteristica;
 }
 
+string UnidadDiscoCompacto::obtenerCodigoDelSietma()
+{
+	return "";
+}
+
 void UnidadDiscoCompacto::modificarNombre(string nom)
 {
 	this->nombre = nom;
@@ -53,6 +58,10 @@ void UnidadDiscoCompacto::modificarModelo(string mod)
 void UnidadDiscoCompacto::modificarCaracteristica(string car)
 {
 	this->caracteristica = car;
+}
+
+void UnidadDiscoCompacto::modificarCodigoDelSistema(string)
+{
 }
 
 void UnidadDiscoCompacto::agregarComponente(Componente*)

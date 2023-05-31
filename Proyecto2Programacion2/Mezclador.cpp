@@ -35,6 +35,11 @@ string Mezclador::obtenerCaracteristica()
 	return caracteristica;
 }
 
+string Mezclador::obtenerCodigoDelSietma()
+{
+	return "";
+}
+
 void Mezclador::modificarNombre(string nom)
 {
 	this->nombre = nom;
@@ -53,6 +58,10 @@ void Mezclador::modificarModelo(string mod)
 void Mezclador::modificarCaracteristica(string car)
 {
 	this->caracteristica = car;
+}
+
+void Mezclador::modificarCodigoDelSistema(string)
+{
 }
 
 void Mezclador::agregarComponente(Componente*)

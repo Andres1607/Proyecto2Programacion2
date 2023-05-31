@@ -35,6 +35,11 @@ string Radio::obtenerCaracteristica()
 	return caracteristica;
 }
 
+string Radio::obtenerCodigoDelSietma()
+{
+	return "";
+}
+
 void Radio::modificarNombre(string nom)
 {
 	this->nombre = nom;
@@ -53,6 +58,10 @@ void Radio::modificarModelo(string mod)
 void Radio::modificarCaracteristica(string car)
 {
 	this->caracteristica = car;
+}
+
+void Radio::modificarCodigoDelSistema(string)
+{
 }
 
 void Radio::agregarComponente(Componente*)

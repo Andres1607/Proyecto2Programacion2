@@ -35,6 +35,11 @@ string Tornamesa::obtenerCaracteristica()
 	return caracteristica;
 }
 
+string Tornamesa::obtenerCodigoDelSietma()
+{
+	return "";
+}
+
 void Tornamesa::modificarNombre(string nom)
 {
 	this->nombre = nom;
@@ -53,6 +58,10 @@ void Tornamesa::modificarModelo(string mod)
 void Tornamesa::modificarCaracteristica(string car)
 {
 	this->caracteristica = car;
+}
+
+void Tornamesa::modificarCodigoDelSistema(string)
+{
 }
 
 void Tornamesa::agregarComponente(Componente*)

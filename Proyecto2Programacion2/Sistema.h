@@ -4,26 +4,29 @@
 class Sistema: public Componente
 {
 private:
+	string cod;
 	ContList<Componente>* sistema;
 	Componente* componente;
 public:
-	Sistema();
+	Sistema(string = "", string = "");
 	virtual~Sistema();
 	//M.V.P
 	//To string
 	string imprimir();
 	//Get´s
-	string obtenerNombre() = 0;
-	double obtenerPrecio() = 0;
-	string obtenerModelo() = 0;
-	string obtenerCaracteristica() = 0;
+	string obtenerNombre();
+	double obtenerPrecio();
+	string obtenerModelo();
+	string obtenerCaracteristica();
+	string obtenerCodigoDelSietma();
 	//Set´s
-	void modificarNombre(string) = 0;
-	void modificarPercio(double) = 0;
-	void modificarModelo(string) = 0;
-	void modificarCaracteristica(string) = 0;
+	void modificarNombre(string);
+	void modificarPercio(double);
+	void modificarModelo(string);
+	void modificarCaracteristica(string);
+	void modificarCodigoDelSistema(string);
 	//Cont
-	void agregarComponente(Componente*) = 0;
-	virtual void eliminarComponenteEspecifico(Componente*) = 0;
+	void agregarComponente(Componente*);
+	void eliminarComponenteEspecifico(Componente*);
 };
 
