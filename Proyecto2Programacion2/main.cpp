@@ -15,6 +15,7 @@
 #include "SalidaDeAudio.h"
 #include "Parlante.h"
 #include "Audifonos.h"
+//Sistema Composite template
 
 using namespace std;
 
@@ -28,7 +29,7 @@ int main() {
 	cout << c2->toString() << endl;
 	*/
 
-	/*
+	
 	//Prueba de composite, pero sin sistemas, solo los individuales
 
 	Componente* tornamesa = new Tornamesa("Tornamesa", 100, "J604jua8", "Algo loco");
@@ -40,7 +41,7 @@ int main() {
 	Componente* parlante = new Amplificador("Parlante", 700, "lgtp5544", "Algo loco");
 	Componente* audifonos = new Audifonos("Audifonos", 800, "laj1ucm2", "Algo loco");
 
-
+	/*
 	cout<< tornamesa->imprimir() << endl;
 	cout<< radio->imprimir() << endl;
 	cout<< unidaddDC->imprimir() << endl;
@@ -49,7 +50,12 @@ int main() {
 	cout<< amplificador->imprimir() << endl;
 	cout<< parlante->imprimir() << endl;
 	cout<< audifonos->imprimir() << endl;
+	*/
 
+
+
+
+	/*
 		Template:
 	ContList<Cliente>* cl = new ContList<Cliente>();
 	cl->agregarObj(c1);
@@ -66,11 +72,9 @@ int main() {
 	cout << cl3->imprimirObjs() << endl;
 	cl3 = cl;
 	cout << cl3->imprimirObjs() << endl;
-
-
-
-
 	*/
+
+
 	system("pause");
 	return 0;
 }
