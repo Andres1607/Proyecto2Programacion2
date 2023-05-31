@@ -21,7 +21,13 @@ using namespace std;
 
 int main() {
 
-	//Peueba de 
+	/*Pruebas
+	Clientes:
+	Cliente* c1 = new Persona("Saul", "1111", "Costarricense", "saul@gmail.com", "Costa Rica", "San Jose");
+	Cliente* c2 = new Empresa("Tacos", "234A", "Costa Rica", "Heredia");
+	cout << c1->toString() << endl;
+	cout << c2->toString() << endl;
+	*/
 
 
 	system("pause");
