@@ -37,6 +37,10 @@ int main() {
 	Componente* sistem1 = new Sistema("12345");
 	cout << sistem1->imprimir() << endl;
 
+	Componente* nose = new Reproductor("Nose", "111", "Palabra", 10.50);
+	sistem1->agregarComponente(nose);
+	cout << sistem1->imprimir() << endl;
+
 	system("pause");
 	return 0;
 }

@@ -28,3 +28,13 @@ void Reproductor::modificarPrecio(double pre) { precio = pre; }
 void Reproductor::modificarModelo(string mod) { modelo = mod; }
 
 void Reproductor::modificarCaracteristica(string caract) { caracteristica = caract; }
+
+void Reproductor::agregarComponente(Componente*)
+{
+	throw new string("Ruta equivocada");
+}
+
+void Reproductor::eliminarComponenteEspecifico(Componente*)
+{
+	throw new string("Ruta equivocada");
+}

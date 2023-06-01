@@ -28,3 +28,13 @@ void Procesador::modificarPrecio(double pre) { precio = pre; }
 void Procesador::modificarModelo(string mod) { modelo = mod; }
 
 void Procesador::modificarCaracteristica(string caract) { caracteristica = caract; }
+
+void Procesador::agregarComponente(Componente*)
+{
+	throw new string("Ruta equivocada");
+}
+
+void Procesador::eliminarComponenteEspecifico(Componente*)
+{
+	throw new string("Ruta equivocada");
+}

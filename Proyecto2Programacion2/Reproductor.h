@@ -20,8 +20,9 @@ public:
 	void modificarNombre(string);
 	void modificarPrecio(double);
 	void modificarModelo(string);
-	virtual void modificarCaracteristica(string);
-
+	void modificarCaracteristica(string);
+	void agregarComponente(Componente*);
+	void eliminarComponenteEspecifico(Componente*);
 };
 
 

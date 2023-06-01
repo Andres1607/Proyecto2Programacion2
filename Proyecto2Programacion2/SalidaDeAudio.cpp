@@ -28,3 +28,13 @@ void SalidaDeAudio::modificarPrecio(double pre) { precio = pre; }
 void SalidaDeAudio::modificarModelo(string mod) { modelo = mod; }
 
 void SalidaDeAudio::modificarCaracteristica(string caract) { caracteristica = caract; }
+
+void SalidaDeAudio::agregarComponente(Componente*)
+{
+	throw new string("Ruta equivocada");
+}
+
+void SalidaDeAudio::eliminarComponenteEspecifico(Componente*)
+{
+	throw new string("Ruta equivocada");
+}
