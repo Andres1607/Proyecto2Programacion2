@@ -7,14 +7,13 @@
 class Sistema: public Componente
 {
 private:
-	string cod;
+	string codigo;
 	ContList<Componente>* sistema;
-	Reproductor* proce;
-	Procesador* rep;
-	SalidaDeAudio* sAudio;
-	//Componente* componente;
+	Reproductor* reproductor;
+	Procesador* procesador;
+	SalidaDeAudio* salidaAudio;
 public:
-	Sistema(string = "", string = "");
+	Sistema(string = "");
 	virtual~Sistema();
 	//Abstract Factory
 	Reproductor* crearReproductor();
@@ -24,16 +23,9 @@ public:
 	//To string
 	string imprimir();
 	//Get´s
-	string obtenerNombre();
-	double obtenerPrecio();
-	string obtenerModelo();
-	string obtenerCaracteristica();
-	string obtenerCodigoDelSietma();
+	string obtenerCodSistema();
+	double obtenerPreSistema();
 	//Set´s
-	void modificarNombre(string);
-	void modificarPercio(double);
-	void modificarModelo(string);
-	void modificarCaracteristica(string);
 	void modificarCodigoDelSistema(string);
 	//Cont
 	void agregarComponente(Componente*);

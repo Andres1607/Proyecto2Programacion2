@@ -2,29 +2,24 @@
 #include "Componente.h"
 class SalidaDeAudio : public Componente
 {
-protected:
+private:
 	string modelo;
+	string nomProducto;
 	string caracteristica;
 public:
-	SalidaDeAudio(string = "", double = 0.0, string = "", string = "");
+	SalidaDeAudio(string = "", string = "", string = "", double = 0.0);
 	virtual~SalidaDeAudio();
 	//M.V.P
 	//To string
-	virtual string imprimir() = 0;
+	virtual string imprimir();
 	//Get´s
-	virtual string obtenerNombre() = 0;
-	virtual double obtenerPrecio() = 0;
-	virtual string obtenerModelo() = 0;
-	virtual string obtenerCaracteristica() = 0;
-	virtual string obtenerCodigoDelSietma() = 0;
+	double obtenerPrecio();
+	string obtenerModelo();
+	string obtenerCaracteristica();
 	//Set´s
-	virtual void modificarNombre(string) = 0;
-	virtual void modificarPercio(double) = 0;
-	virtual void modificarModelo(string) = 0;
-	virtual void modificarCaracteristica(string) = 0;
-	virtual void modificarCodigoDelSistema(string) = 0;
-	//Cont
-	virtual void agregarComponente(Componente*) = 0;
-	virtual void eliminarComponenteEspecifico(Componente*) = 0;
-};
+	void modificarNombre(string);
+	void modificarPrecio(double);
+	void modificarModelo(string);
+	virtual void modificarCaracteristica(string);
 
+};

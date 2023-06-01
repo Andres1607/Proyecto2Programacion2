@@ -1,14 +1,17 @@
 #include "Sistema.h"
 
-Sistema::Sistema(string nom, string cod) : Componente(nom)
-{
-    this->cod = cod;
+Sistema::Sistema(string cod) : codigo(cod) {
     sistema = new ContList<Componente>();
+    reproductor = crearReproductor();
+    procesador = crearProcesador();
+    salidaAudio = crearSalidaDeAudio();
+
+    agregarComponente(reproductor);
+    agregarComponente(procesador);
+    agregarComponente(salidaAudio);
 }
 
-Sistema::~Sistema()
-{
-}
+Sistema::~Sistema(){}
 
 Reproductor* Sistema::crearReproductor()
 {
@@ -31,67 +34,27 @@ SalidaDeAudio* Sistema::crearSalidaDeAudio()
 string Sistema::imprimir()
 {
     stringstream s;
-    s << "Nombre del sistema: " << nombre << endl
-        << "Codigo: " << cod << endl
-        << "------------------LISTADO COMPONENTES------------------" << endl;
+    s << "----------------SISTEMA---------------------" << endl;
+    s << "Codigo:       " << codigo << endl;
+    s << "------------------LISTADO COMPONENTES------------------" << endl;
     if (sistema != NULL)
         s << sistema->imprimirObjs();
     s << "-------------------------------------------------------" << endl;
     return s.str();
 }
 
-string Sistema::obtenerNombre()
-{
-    return "";
+string Sistema::obtenerCodSistema(){return codigo;}
+
+double Sistema::obtenerPreSistema(){ 
+    return sistema->obtenerPrecio();
 }
 
-double Sistema::obtenerPrecio()
-{
-    return 0.0;
-}
+void Sistema::modificarCodigoDelSistema(string cod) {codigo = cod;}
 
-string Sistema::obtenerModelo()
-{
-    return "";
-}
-
-string Sistema::obtenerCaracteristica()
-{
-    return "";
-}
-
-string Sistema::obtenerCodigoDelSietma()
-{
-    return cod;
-}
-
-void Sistema::modificarNombre(string)
-{
-}
-
-void Sistema::modificarPercio(double)
-{
-}
-
-void Sistema::modificarModelo(string)
-{
-}
-
-void Sistema::modificarCaracteristica(string)
-{
-}
-
-void Sistema::modificarCodigoDelSistema(string cod)
-{
-    this->cod = cod;
-}
-
-void Sistema::agregarComponente(Componente* comp)
-{
+void Sistema::agregarComponente(Componente* comp) {
     sistema->agregarObj(comp);
 }
 
-void Sistema::eliminarComponenteEspecifico(Componente* comp)
-{
+void Sistema::eliminarComponenteEspecifico(Componente* comp){
     sistema->eliminarObjEspecif(comp);
 }

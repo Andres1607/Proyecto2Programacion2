@@ -1,9 +1,5 @@
 #include "Componente.h"
 
-Componente::Componente(string nom, double precio):nombre(nom), precio(precio)
-{
-}
+Componente::Componente(double pre) : precio(pre){}
 
-Componente::~Componente()
-{
-}
+Componente::~Componente(){}
