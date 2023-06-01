@@ -4,6 +4,7 @@
 #include "Reproductor.h"
 #include "Procesador.h"
 #include "SalidaDeAudio.h"
+#include"Manejo.h"
 class Sistema: public Componente
 {
 private:
@@ -24,7 +25,8 @@ public:
 	string imprimir();
 	//Get´s
 	string obtenerCodSistema();
-	double obtenerPreSistema();
+	double obtenerPrecio();
+	void modificarPrecio(double);
 	//Set´s
 	void modificarCodigoDelSistema(string);
 	//Cont

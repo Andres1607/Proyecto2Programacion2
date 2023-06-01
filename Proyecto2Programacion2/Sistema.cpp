@@ -15,20 +15,17 @@ Sistema::~Sistema(){}
 
 Reproductor* Sistema::crearReproductor()
 {
-    //return Interfaz::CrearReproductor();
-    return NULL;//Por el momento
+    return Manejo::crearReproductor();
 }
 
 Procesador* Sistema::crearProcesador()
 {
-    //return Interfaz::CrearProsesador();
-    return NULL;//Por el momento
+    return Manejo::crearProcesador();
 }
 
 SalidaDeAudio* Sistema::crearSalidaDeAudio()
 {
-    //return Interfaz::CrearSalidaDeAudio();
-    return NULL;//Por el momento
+    return Manejo::crearSalidaAudio();
 }
 
 string Sistema::imprimir()
@@ -45,9 +42,11 @@ string Sistema::imprimir()
 
 string Sistema::obtenerCodSistema(){return codigo;}
 
-double Sistema::obtenerPreSistema(){ 
+double Sistema::obtenerPrecio(){ 
     return sistema->obtenerPrecio();
 }
+
+void Sistema::modificarPrecio(double pre) { precio = pre; }
 
 void Sistema::modificarCodigoDelSistema(string cod) {codigo = cod;}
 

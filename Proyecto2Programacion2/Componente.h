@@ -16,9 +16,7 @@ public:
 	//Get´s
 	virtual double obtenerPrecio() = 0;
 	//Set´s
-	virtual void modificarPercio(double) = 0;
-	//Cont
-	virtual void agregarComponente(Componente*) = 0;
-	virtual void eliminarComponenteEspecifico(Componente*) = 0;
+	virtual void modificarPrecio(double) = 0;
+	
 };
 

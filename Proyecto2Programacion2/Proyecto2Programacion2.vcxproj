@@ -131,6 +131,7 @@
     <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="Componente.cpp" />
     <ClCompile Include="Empresa.cpp" />
+    <ClCompile Include="Manejo.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Persona.cpp" />
     <ClCompile Include="Procesador.cpp" />
@@ -147,6 +148,7 @@
     <ClInclude Include="ContList.h" />
     <ClInclude Include="Empresa.h" />
     <ClInclude Include="Fecha.h" />
+    <ClInclude Include="Manejo.h" />
     <ClInclude Include="Nodo.h" />
     <ClInclude Include="Persona.h" />
     <ClInclude Include="Procesador.h" />

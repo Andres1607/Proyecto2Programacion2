@@ -34,6 +34,8 @@ int main() {
 	cout << cl3->imprimirObjs() << endl;
 	*/
 
+	Componente* sistem1 = new Sistema("12345");
+	cout << sistem1->imprimir() << endl;
 
 	system("pause");
 	return 0;
